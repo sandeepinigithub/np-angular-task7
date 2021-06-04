@@ -1,0 +1,8 @@
+$hbg-color: #f84b67;
+.header__container {
+  &__wrapper {
+    &--bgcolor {
+      background-color: $hbg-color;
+    }
+  }
+}
