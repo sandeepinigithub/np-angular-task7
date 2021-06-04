@@ -1,0 +1,10 @@
+$bg-color : #3f51b5;
+.main__container{
+    background-color: $bg-color;
+    &__wrapper{
+        h1,p{
+            color: #fff;
+            line-height: 1.5;
+        }
+    }
+}
