@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {nav} from './utils/navigation'
 
 @Component({
   selector: 'app-header',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  navigations:any = []
+
   constructor() { }
 
   ngOnInit(): void {
+    this.navigations = nav;
   }
 
 }
