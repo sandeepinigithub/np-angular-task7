@@ -8,35 +8,12 @@
                     obcaecati alias fugit. Dicta consectetur expedita at.
                 </p>
 
-                <div class="card col-10 col-sm-2 col-md-3 col-xl-3 py-3" style="width: 18rem">
+                <div *ngFor = "let work of works" class="card col-10 col-sm-2 col-md-3 col-xl-3 py-3" style="width: 18rem">
                     <img src="../../assets/works-1.jpg" class="card-img-top" alt="..." />
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
+                        <h5 class="card-title">{{work.name}}</h5>
                         <p class="card-text">
-                            Some quick example text to build on the card title and make up
-                            the bulk of the card's content.
-                        </p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-                <div class="card col-10 col-sm-2 col-md-3 col-xl-3 py-3" style="width: 18rem">
-                    <img src="../../assets/works-2.jpg" class="card-img-top" alt="..." />
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">
-                            Some quick example text to build on the card title and make up
-                            the bulk of the card's content.
-                        </p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-                <div class="card col-10 col-sm-2 col-md-3 col-xl-3 py-3" style="width: 18rem">
-                    <img src="../../assets/works-3.jpg" class="card-img-top" alt="..." />
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">
-                            Some quick example text to build on the card title and make up
-                            the bulk of the card's content.
+                            {{work.description}}
                         </p>
                         <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>

@@ -6,60 +6,18 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
                 itaque fugiat sapiente, optio debitis aut.
             </p>
-            <div class="card shadow col-10 col-sm-4 col-md-3 col-xl-3  m-2">
-                <span class="text-center mt-5"><i
-                        class="fas fa-phone-alt fa-3x text-danger p-4 text-center shadow"></i></span>
-                <h4 class="text-center my-5">Quasi reiciendis</h4>
+            <div *ngFor = "let service of services" class="card shadow col-10 col-sm-4 col-md-3 col-xl-3  m-2">
+                <span class="text-center mt-5"><i ngClass="{{service.iconClass}}"></i></span>
+                <h4 class="text-center my-5">{{service.name}}</h4>
                 <p class="text-center mb-5">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum earum
-                    voluptas eaque porro molestias?
+                   {{service.description}}
                 </p>
             </div>
-            <div class="card shadow col-10 col-sm-4 col-md-3 col-xl-3  m-2">
-                <span class="text-center mt-5"><i
-                        class="fas fa-heart fa-3x text-danger p-4 text-center shadow"></i></span>
-                <h4 class="text-center my-5">Quasi reiciendis</h4>
-                <p class="text-center mb-5">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum earum
-                    voluptas eaque porro molestias?
-                </p>
-            </div>
-            <div class="card shadow col-10 col-sm-4 col-md-3 col-xl-3  m-2">
-                <span class="text-center mt-5"><i
-                        class="fas fa-user-alt fa-3x text-danger p-4 text-center shadow"></i></span>
-                <h4 class="text-center my-5">Quasi reiciendis</h4>
-                <p class="text-center mb-5">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum earum
-                    voluptas eaque porro molestias?
-                </p>
-            </div>
-            <div class="card shadow col-10 col-sm-4 col-md-3 col-xl-3  m-2">
-                <span class="text-center mt-5"><i
-                        class="fas fa-search fa-3x text-danger p-4 text-center shadow"></i></span>
-                <h4 class="text-center my-5">Quasi reiciendis</h4>
-                <p class="text-center mb-5">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum earum
-                    voluptas eaque porro molestias?
-                </p>
-            </div>
-            <div class="card shadow col-10 col-sm-4 col-md-3 col-xl-3  m-2">
-                <span class="text-center mt-5"><i
-                        class="fas fa-thumbs-up fa-3x text-danger p-4 text-center shadow"></i></span>
-                <h4 class="text-center my-5">Quasi reiciendis</h4>
-                <p class="text-center mb-5">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum earum
-                    voluptas eaque porro molestias?
-                </p>
-            </div>
-            <div class="card shadow col-10 col-sm-4 col-md-3 col-xl-3  m-2">
-                <span class="text-center mt-5"><i
-                        class="fas fa-eye-slash fa-3x text-danger p-4 text-center shadow"></i></span>
-                <h4 class="text-center my-5">Quasi reiciendis</h4>
-                <p class="text-center mb-5">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum earum
-                    voluptas eaque porro molestias?
-                </p>
-            </div>
+
+
+
+
+
 
         </div>
 
